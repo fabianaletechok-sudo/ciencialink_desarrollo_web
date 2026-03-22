@@ -11,50 +11,137 @@
 
 <body>
     <header>
-        <nav>
-            <h1>Minimarki </h1>
-            <ul>
-                <li><a href="#quienes-somos">Quiénes somos</a></li>
-                <li><a href="#productos">Productos</a></li>
-                <li><a href="#servicios">Servicios</a></li>
-                <li><a href="#ubicación">Ubicación</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="#">Minimarki</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-Toggle-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav-ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#quienes-somos">Quiénes somos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#productos">Productos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#ubicación">Ubicación</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
+    <main class="container my-5">
+        <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-danger"
+            style="background-image: url('https://media.istockphoto.com/id/589415708/es/foto/frescos-de-frutas-y-verduras.jpg?s=612x612&w=0&k=20&c=lfGDyo_wtzei9IQhM8J6bi-fKxi1bMv6KjjaXiSd_eA='); background-size: cover;">
+            <div class="col-md-6 p-lg-5 bg-warning mx-auto my-5">
+                <h1 class="display-3 fw-bold">Designed for engineers</h1>
+                <h3 class="fw-normal text-muted mb-3">Build anything you want with aperture</h3>
+                <div class="d-flex gap-3 justify-content-center lead fw-normal"> <a class="icon-link" href="#">
+                        Learn more
+                        <svg class="bi" aria-hidden="true">
+                            <use xlink:href="#chevron-right"></use>
+                        </svg> </a> <a class="icon-link" href="#">
+                        Buy
+                        <svg class="bi" aria-hidden="true">
+                            <use xlink:href="#chevron-right"></use>
+                        </svg> </a> </div>
+            </div>
+            <div class="product-device shadow-sm d-none d-md-block"></div>
+            <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+        </div>
+    </main>
     <main>
         <section id="quienes-somos">
             <h2>Quiénes somos</h2>
             <p>Somos una microempresa, dedicada a ofrecer productos frescos y variados para el consumo de la población,
                 brindando buena calidad y buenos productos para el consumo de la población </p>
         </section>
-        <section id="productos">
-            <h3>Productos</h3>
-            <ul>
-                <li>Abarrotes</li> 
-                <li>Bebidas</li>
-                <li>Carnes</li>
-                <li>Panadería</li>
-                <li>Cuidado del hogar</li>
+        <section id="productos" class="col mb-5">
+            <h2 class="text-primary">Productos</h2>
+            <div class="row">
+                <div class="card-group">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://amarket.com.bo/cdn/shop/files/360026_700x700.jpg?v=1712345784"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Jamón Sandwichero</h5>
+                            <p class="card-text">Jamón sanwichero Sofía de 250 g.</p>
+                            <p class="card-text"><small class="text-body-secondary">Bs. 10.50</small></p>
+                            <a href="https://wa.me/59168193280?text=Hola!%20quisiera%20pedir%20este%20producto"
+                                class="btn btn-primary">Pedir</a>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://amarket.com.bo/cdn/shop/files/900901062827_700x700.jpg?v=1712346194"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Chorizo Parrillero</h5>
+                            <p class="card-text">Chorizo parrillero Sofía 1 Kg aproximadamente.</p>
+                            <p class="card-text"><small class="text-body-secondary">Bs. 46.50</small></p>
+                            <a href="https://wa.me/59168193280?text=Hola!%20quisiera%20pedir%20este%20producto"
+                                class="btn btn-primary">Pedir</a>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://www.corralesdelsur.cl/cdn/shop/products/ChorizoItalianoElSecreto.jpg?v=1663003789&width=1946"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Chorizo Italiano Artesanal</h5>
+                            <p class="card-text">Chorizo Italiano "El secreto del Chillán" 5 unidades.</p>
+                            <p class="card-text"><small class="text-body-secondary">Bs. 26.00</small></p>
+                            <a href="https://wa.me/59168193280?text=Hola!%20quisiera%20pedir%20este%20producto"
+                                class="btn btn-primary">Pedir</a>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://amarket.com.bo/cdn/shop/files/900901062827_700x700.jpg?v=1712346194"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Mini salchicha de pollo</h5>
+                            <p class="card-text">Mini Salchicha de Pollo Sofía al vacío 20 unidades.</p>
+                            <p class="card-text"><small class="text-body-secondary">Bs. 30.50</small></p>
+                            <a href="https://wa.me/59168193280?text=Hola!%20quisiera%20pedir%20este%20producto"
+                                class="btn btn-primary">Pedir</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <ul class="list-group">
+                <li class="list-group-item">Abarrotes</li>
+                <li class="list-group-item">Bebidas</li>
+                <li class="list-group-item">Carnes</li>
+                <li class="list-group-item">Panadería</li>
+                <li class="list-group-item">Cuidado del hogar</li>
             </ul>
         </section>
-        <section id="servicios">
-            <h3>Servicios</h3>
-            <ul>
-                <li>Entregas delivery</li>
-                <li>Pedidos especiales</li>
+        <section id="servicios" class="col mb-5">
+            <h2 class="text-primary">Servicios</h2>
+            <ul class="list-group">
+                <li class="list-group-item">Entregas delivery</li>
+                <li class="list-group-item">Pedidos especiales</li>
             </ul>
         </section>
+        <div class="container">
+            <div class="row">
+                <section id="ubicacion" class="col mb-5">
+                    <h3 class="text-primary">Ubicación</h3>
+                    <p>Avenida Buenos Aires, calle León de la Barra #123</br>
+                        La Paz - Bolivia</p>
+                </section>
+                <section id="contacto" class="col mb-5">
+                    <h3 class="text-primary">Contacto</h3>
+                    <p>Email:minimarki@email.com<br />
+                        Teléfono: 223-562-894</p>
+                </section>
+            </div>
+        </div>
     </main>
-    <footer>
-        <h3>Ubicación</h3>
-        Avenida Buenos Aires, calle León de la Barra #123<br />
-        La Paz - Bolivia<br />
-        <h3>Contacto</h3>
-        Email:minimarki@email.com<br />
-        Teléfono: 223-562-894
-        <p>&copy; 2026 Minimarki. Todos los derechos reservados.</p>
+    <footer class="bg-light text-center py-3 border-top mt-5">
+        <p class="mb-0">&copy; 2026 Minimarki. Todos los derechos reservados.</p>
     </footer>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
 </body>
 
 </html>
